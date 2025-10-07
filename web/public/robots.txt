@@ -1,0 +1,5 @@
+# robots.txt for growthmarketingcanvas.com
+User-agent: *
+Allow: /
+
+Sitemap: https://www.growthmarketingcanvas.com/sitemap.xml
