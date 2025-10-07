@@ -1,0 +1,30 @@
+{
+  "name": "growthmarketingcanvas (Node 24)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bullseye",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.eol": "\n",
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        "astro-build.astro-vscode",
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "remoteUser": "node",
+  "updateContentCommand": "bash -lc '(corepack pnpm --version || pnpm --version || npm --version) >/dev/null 2>&1 || true'",
+  "postCreateCommand": "bash -lc 'if [ -f package.json ]; then (corepack pnpm install || pnpm install || npm install); fi'",
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": {
+      "label": "Astro dev server",
+      "onAutoForward": "notify"
+    }
+  }
+}

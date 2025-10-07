@@ -1,0 +1,48 @@
+# Root gitignore for growthmarketingcanvas.com
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Node/JavaScript
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+.env.production
+
+# Build artifacts
+web/dist/
+web/.astro/
+
+# Cache
+web/node_modules/.cache/
+
+# Devcontainer local artifacts (keep tracked config files)
+.devcontainer/*.log
+
+# Generated assets
+*.cache
+
+# Lockfiles (optional to ignore at root; keep in subprojects)
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+# Misc
+*.temp
+*.tmp
