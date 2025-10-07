@@ -1,16 +1,381 @@
 ---
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold text-blue-600">Astro + Tailwind</h1>
-  </body>
-</html>
+<BaseLayout
+  title="The Growth Marketing Canvas™ — Leverage a full‑funnel growth strategy"
+  description="Define a 12‑month actionable, customer‑centric growth plan. Used by 2,000+ companies worldwide. Download the Growth Marketing Canvas and align your team around what moves the needle."
+  ogImage="/images/Growth-marketing-canvas_A1_V19_thumbnail.webp"
+  canonical="https://www.growthmarketingcanvas.com/"
+>
+  <!-- TOP BANNER -->
+  <section
+    id="top-banner"
+    class="bg-gradient-to-r from-orange-600 to-orange-500 text-white"
+  >
+    <div class="mx-auto max-w-6xl px-5 py-4 sm:py-5">
+      <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">
+        The Growth Marketing Canvas<sup class="align-super text-[0.6em]">™</sup
+        >
+      </p>
+
+      <p class="mt-1 text-sm sm:text-base text-gray-300">
+        Leverage the power of a full-funnel growth strategy
+      </p>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero" class="py-20 sm:py-24 bg-orange-50">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+            The Growth Marketing Canvas<sup class="align-super text-base"
+              >™</sup
+            >
+          </h1>
+          <p class="mt-4 text-lg text-gray-700">
+            A simple, battle‑tested framework to turn endless ideas into a
+            focused 12‑month growth plan — built with your team, for your
+            customers.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href="/files/Growth-marketing-canvas_A1_V19.pdf"
+              download
+              class="inline-flex items-center rounded-xl bg-orange-500 px-5 py-3 font-semibold text-white shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            >
+              Download the Canvas
+            </a>
+            <a
+              href="#how-it-works"
+              class="inline-flex items-center rounded-xl bg-gray-100 px-5 py-3 font-semibold text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300"
+            >
+              See how it works
+            </a>
+          </div>
+          <p class="mt-3 text-sm text-gray-500">
+            Downloaded <strong>56k+ times</strong> · Loved by marketers and product
+            teams
+          </p>
+        </div>
+        <figure class="order-first lg:order-last">
+          <img
+            src="/images/Growth-marketing-canvas_A1_V19_thumbnail.webp"
+            alt="Preview of the Growth Marketing Canvas"
+            class="w-full rounded-2xl shadow"
+          />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / SOCIAL PROOF (uses a combined logos image for now) -->
+  <section id="logos" aria-label="Trusted by" class="py-10">
+    <div class="mx-auto max-w-6xl px-5">
+      <p
+        class="text-center text-xs font-semibold uppercase tracking-widest text-gray-500"
+      >
+        Used by 2,000+ companies across the globe
+      </p>
+      <div class="mt-6 flex items-center justify-center">
+        <img
+          src="/images/GMC-customer-logos-4-1-e1557141622357.webp"
+          alt="Customer logos"
+          class="h-14 w-auto opacity-80 sm:h-16 md:h-20"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM / PROMISE -->
+  <section id="why" aria-label="Why the Canvas" class="py-20 bg-white">
+    <div class="mx-auto max-w-6xl px-5 grid items-center gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+          Ambitious growth is hard. The Canvas makes it doable.
+        </h2>
+        <p class="mt-4 text-gray-700">
+          When ideas are infinite, teams stall. The Growth Marketing Canvas
+          focuses your efforts on what customers truly need and aligns
+          stakeholders around a single, testable roadmap. No fluff — just a
+          clear path to sustainable growth.
+        </p>
+        <ul class="mt-6 space-y-2 text-gray-800">
+          <li>
+            <span class="font-semibold">Customer‑centric:</span> start from pains,
+            jobs, and moments that matter.
+          </li>
+          <li>
+            <span class="font-semibold">Team‑powered:</span> harness collective intelligence
+            to surface better ideas.
+          </li>
+          <li>
+            <span class="font-semibold">Actionable:</span> prioritize experiments
+            that move acquisition, activation, retention, and revenue.
+          </li>
+        </ul>
+      </div>
+      <figure>
+        <img
+          src="/images/DSC0065.webp"
+          alt="Team using the Growth Marketing Canvas in a workshop"
+          class="w-full rounded-2xl shadow"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" aria-label="How it works" class="py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        How it works
+      </h2>
+      <div class="mt-8 grid items-start gap-8 lg:grid-cols-2">
+        <ol class="grid gap-6 md:grid-cols-2 lg:grid-cols-1 lg:order-2">
+          <li class="rounded-2xl border border-gray-200 p-6">
+            <h3 class="text-xl font-semibold">Run a process‑driven workshop</h3>
+            <p class="mt-2 text-gray-700">
+              Map your funnel, expose bottlenecks, and frame problems worth
+              solving with crisp success metrics.
+            </p>
+          </li>
+          <li class="rounded-2xl border border-gray-200 p-6">
+            <h3 class="text-xl font-semibold">
+              Align your team around one plan
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Gather input from product, marketing, sales, and success. Build
+              shared context and pick owners.
+            </p>
+          </li>
+          <li class="rounded-2xl border border-gray-200 p-6">
+            <h3 class="text-xl font-semibold">
+              Prioritize high‑leverage experiments
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Brainstorm, score, and schedule ideas that move the funnel. Learn
+              fast, iterate faster.
+            </p>
+          </li>
+        </ol>
+        <figure class="lg:order-1">
+          <img
+            src="/images/DSC0125.webp"
+            alt="Workshop in progress"
+            class="w-full rounded-2xl shadow"
+          />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" aria-label="Testimonials" class="py-20 bg-gray-50">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2
+        class="text-center text-3xl font-bold uppercase tracking-tight text-gray-900 sm:text-4xl"
+      >
+        LOVED BY OUR COMMUNITY
+      </h2>
+      <div class="mt-8 grid items-stretch gap-6 md:grid-cols-2">
+        <figure class="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
+          <blockquote class="text-lg">
+            “Wonderful tool to structure your ideation process when designing
+            your growth strategy.”
+          </blockquote>
+          <figcaption
+            class="mt-auto flex items-center gap-3 pt-4 text-sm text-gray-600"
+          >
+            <img
+              src="/images/Noemie-Benoit-Circle.webp"
+              alt="Noémie Benoit"
+              class="h-10 w-10 rounded-full object-cover"
+            />
+            <span
+              ><span class="font-semibold">Noémie Benoit</span> — CMO, Around Media</span
+            >
+          </figcaption>
+        </figure>
+        <figure class="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
+          <blockquote class="text-lg">
+            “Eazl thinks highly enough of MAD Kings’ Growth Marketing Canvas to
+            offer it to all of the aspiring growth hackers in our community.”
+          </blockquote>
+          <figcaption
+            class="mt-auto flex items-center gap-3 pt-4 text-sm text-gray-600"
+          >
+            <img
+              src="/images/Davis-Jones-Circle.webp"
+              alt="Davis Jones"
+              class="h-10 w-10 rounded-full object-cover"
+            />
+            <span
+              ><span class="font-semibold">Davis Jones</span> — CEO, Eazl</span
+            >
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section id="authors" aria-label="About the authors" class="py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        About the authors
+      </h2>
+      <div class="mt-8 grid gap-8 md:grid-cols-2">
+        <article
+          class="flex items-start gap-4 rounded-2xl border border-gray-200 p-6"
+        >
+          <div class="flex w-20 shrink-0 flex-col items-center gap-2">
+            <img
+              src="/images/Jean-Christophe-Cuvelier-circle.webp"
+              alt="Jean‑Christophe Cuvelier"
+              class="h-20 w-20 aspect-square rounded-full object-cover"
+            />
+            <a
+              href="https://www.linkedin.com/in/totophe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-50 text-blue-600 ring-1 ring-inset ring-blue-200 transition hover:bg-blue-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              aria-label="Jean‑Christophe Cuvelier on LinkedIn"
+              title="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.339 18.338H6V9.75h2.339v8.588ZM7.169 8.669a1.356 1.356 0 1 1 0-2.713 1.356 1.356 0 0 1 0 2.713ZM18.338 18.338H16v-4.41c0-1.053-.02-2.406-1.466-2.406-1.468 0-1.693 1.146-1.693 2.33v4.486H10.5V9.75h2.244v1.17h.032c.313-.594 1.08-1.218 2.225-1.218 2.381 0 2.838 1.568 2.838 3.607v5.029Z"
+                ></path>
+              </svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Jean‑Christophe Cuvelier</h3>
+
+            <p class="mt-1 text-gray-700">
+              JC is a jack‑of‑all‑trades, data‑driven growth leader and AI
+              expert. He blends marketing, product, and engineering to turn
+              insights into execution—automating workflows and building systems
+              that scale. Today, he helps teams leverage AI to accelerate
+              acquisition, activation, and retention— without the hype. He
+              mentors founders and enjoys turning messy go‑to‑market puzzles
+              into simple, testable plans.
+            </p>
+          </div>
+        </article>
+        <article
+          class="flex items-start gap-4 rounded-2xl border border-gray-200 p-6"
+        >
+          <img
+            src="/images/Thomas-Paris_Circle.webp"
+            alt="Thomas Paris"
+            class="h-20 w-20 rounded-full object-cover"
+          />
+          <div>
+            <h3 class="text-xl font-semibold">Thomas Paris</h3>
+            <p class="mt-1 text-gray-700">
+              Thomas is a growth marketer and co‑founder of MAD Kings and
+              Pictawall. He champions customer‑centric, data‑driven
+              experimentation as the shortest path to traction and revenue.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section
+    id="download"
+    aria-label="Download the Canvas"
+    class="py-24 bg-gradient-to-br from-orange-50 to-white"
+  >
+    <div class="mx-auto max-w-3xl px-5 text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Get your Growth Marketing Canvas
+      </h2>
+      <p class="mt-2 text-gray-700">A1 printable PDF · Free download</p>
+      <a
+        href="/files/Growth-marketing-canvas_A1_V19.pdf"
+        download
+        class="mt-6 inline-flex items-center rounded-2xl bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-orange-300"
+      >
+        Download PDF
+      </a>
+      <p class="mt-3 text-sm text-gray-500">
+        872 KB · print‑ready · instant access
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-label="FAQ" class="py-20">
+    <div class="mx-auto max-w-4xl px-5">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Frequently asked questions
+      </h2>
+      <div
+        class="mt-6 divide-y divide-gray-200 rounded-2xl border border-gray-200"
+      >
+        <details class="group p-5 open:pb-4">
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-lg font-medium"
+            >What is included in the download?<span
+              class="ml-4 text-gray-400 group-open:rotate-180">▾</span
+            ></summary
+          >
+          <p class="mt-2 text-gray-700">
+            An A1 printable PDF of the Growth Marketing Canvas with usage tips.
+          </p>
+        </details>
+        <details class="group p-5">
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-lg font-medium"
+            >Who is it for?<span
+              class="ml-4 text-gray-400 group-open:rotate-180">▾</span
+            ></summary
+          >
+          <p class="mt-2 text-gray-700">
+            Growth leaders, product managers, and marketers who need a focused
+            plan.
+          </p>
+        </details>
+        <details class="group p-5">
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-lg font-medium"
+            >Can I use it with my team?<span
+              class="ml-4 text-gray-400 group-open:rotate-180">▾</span
+            ></summary
+          >
+          <p class="mt-2 text-gray-700">
+            Yes. It’s designed for collaborative workshops online or in person.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER NOTE -->
+  <section id="site-note" class="bg-orange-500 py-10 text-white">
+    <div class="mx-auto max-w-6xl px-5 text-center">
+      <p>
+        © 2017–{new Date().getFullYear()} The Growth Marketing Canvas · By
+        <a
+          href="https://www.madkings.com/"
+          rel="noopener"
+          class="underline underline-offset-2">MAD Kings</a
+        >
+      </p>
+    </div>
+  </section>
+</BaseLayout>

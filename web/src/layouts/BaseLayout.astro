@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const {
+  title = "The Growth Marketing Canvas",
+  description = "Define a 12‑month actionable, customer‑centric growth plan. Used by 2,000+ companies worldwide.",
+  ogImage = "/images/Growth-marketing-canvas_A1_V19_thumbnail.webp",
+  canonical,
+} = Astro.props as Props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="min-h-screen antialiased text-gray-900">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:m-2 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:shadow"
+      >Skip to content</a
+    >
+    <main id="main"><slot /></main>
+  </body>
+</html>
