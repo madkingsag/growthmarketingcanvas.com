@@ -12,3 +12,9 @@ Notes:
 
 - Node 18.20+, 20.3+, or 22+ recommended. This devcontainer currently runs Node 24.
 - You can add React, Tailwind, etc. later with `npm run astro add <integration>` from inside `web/`.
+
+Deployment (GitHub Pages):
+
+- The GitHub Actions workflow `.github/workflows/deploy-pages.yml` builds `web/` on push to `main` and deploys to Pages.
+- Ensure the repository Pages settings are set to “Source: GitHub Actions”.
+- Custom domain is configured via `web/public/CNAME` (growthmarketingcanvas.com, www.growthmarketingcanvas.com).
